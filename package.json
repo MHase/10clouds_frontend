@@ -1,0 +1,33 @@
+{
+  "name": "10clouds_frontend",
+  "version": "1.0.0",
+  "description": "10clouds recruitment task for frontend developer",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack"
+  },
+  "keywords": [],
+  "author": "Maciej Sykula",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MHase/10clouds_frontend.git"
+  },
+  "bugs": {
+    "url": "https://github.com/MHase/10clouds_frontend/issues"
+  },
+  "homepage": "https://github.com/MHase/10clouds_frontend#readme",
+  "devDependencies": {
+    "babel-core": "^6.24.1",
+    "babel-loader": "^7.0.0",
+    "babel-preset-es2015": "^6.24.1",
+    "css-loader": "^0.28.1",
+    "extract-text-webpack-plugin": "^2.1.0",
+    "file-loader": "^0.11.1",
+    "node-sass": "^4.5.2",
+    "sass-loader": "^6.0.5",
+    "style-loader": "^0.17.0",
+    "webpack": "^2.5.1"
+  }
+}
