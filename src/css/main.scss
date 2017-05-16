@@ -231,6 +231,10 @@ select, input[type='text'] {
   top: 0px;
 }
 
+input[type='submit'] {
+  // display: none;
+}
+
 .pointer {
   cursor: pointer;
 }
@@ -261,12 +265,21 @@ select, input[type='text'] {
   content: "\2013";
 }
 
+
+.default {
+  border: 2px solid #dcdce1;
+}
+.selected {
+  border: 2px solid $active;
+  // border-color: $active;
+}
+
 .radio {
   display: inline-block;
   position: relative;
   width: 50px;
   height: 50px;
-  border: 2px solid #dcdce1;
+  // border: $border2;
   margin-right: 25px;
 }
 
@@ -274,8 +287,8 @@ select, input[type='text'] {
 
 .check {
   position: absolute;
+  // border: $border2;
   background: #FFF;
-  border: 2px solid #dcdce1;
   height: 15px;
   width: 15px;
   top: 50%;
@@ -286,16 +299,13 @@ select, input[type='text'] {
 .radio_active {
   visibility: hidden;
   position: absolute;
-  border: 2px solid #dcdce1;
   height: 3px;
   width: 3px;
   top: 50%;
   left: 50%;
   transform: translate(-50%,-50%);
 }
-.selected {
-  border-color: $active;
-}
+
 
 #male {
   background: url('../img/male.png') no-repeat center center;
