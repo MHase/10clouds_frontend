@@ -3,6 +3,8 @@
 
 
 $height: 552px;
+$right_width: 470px;
+
 $background: url('../img/background.png');
 $left_panel_img: url("../img/left_panel.png");
 $gray: #dcdce1;
@@ -10,7 +12,6 @@ $green: #1bfec0;
 $white: #FFFFFF;
 $violet: #531fc0;
 
-$right_width: 470px;
 
 body {
   font-family: "Karla", "Myriad Pro", Myriad, "Liberation Sans", "Nimbus Sans L", "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -19,6 +20,16 @@ body {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+  overflow: auto;
+}
+*::selection {
+  background: $green;
+}
+*::-moz-selection {
+  background: $green;
+}
+*::-webkit-selection {
+  background: $green;
 }
 
 .hidden {
@@ -117,7 +128,7 @@ body {
   height: $height;
   width: $right_width;
   min-width: $right_width;
-  min-height: 100%;
+  max-height: $height;
   position: absolute;
   // float: right;
   right: 0px;
@@ -156,6 +167,7 @@ body {
 }
 
 #account {
+  display: inherit;
   font-size: 48px;
   color: #FFF;
   position: absolute;
@@ -163,18 +175,20 @@ body {
 }
 
 .title {
+  font-size: 14px;
   line-height: 150%;
-  display: block;
   height: 100px;
+  width: 300px;
 }
 
 #welcome {
-  position: absolute;
-  left: (50px+15px); //padding+align to input text
-  // top: 50px;
+  position: relative;
+  width: auto;
+  left: 15px;
 }
 
-input[type='text'] {
+input[type='text'],
+input[type='tel'] {
   font-size:16px;
   padding:20px 5px 20px 15px;
   position: relative;
