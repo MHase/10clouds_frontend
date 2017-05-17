@@ -1,6 +1,6 @@
 @import url('//fonts.googleapis.com/css?family=Karla');
 
-@import "handheld";
+
 
 $height: 552px;
 $background: url('../img/background.png');
@@ -9,6 +9,8 @@ $gray: #dcdce1;
 $green: #1bfec0;
 $white: #FFFFFF;
 $violet: #531fc0;
+
+$right_width: 470px;
 
 body {
   font-family: "Karla", "Myriad Pro", Myriad, "Liberation Sans", "Nimbus Sans L", "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -45,9 +47,6 @@ body {
     display:flex;
     justify-content: center;
     align-items: center;
-
-}
-.modal span {
 
 }
 
@@ -116,11 +115,12 @@ body {
 
 .right {
   height: $height;
-  width: 470px;
-  min-width: 470px;
+  width: $right_width;
+  min-width: $right_width;
   min-height: 100%;
-  position: relative;
-  float: right;
+  position: absolute;
+  // float: right;
+  right: 0px;
   background: $white;
   // display: none;
   padding: 50px;
@@ -128,8 +128,7 @@ body {
 
 
 
-.group 			  {
-  // width: auto;
+.group {
   position:relative;
 }
 
@@ -171,8 +170,8 @@ body {
 
 #welcome {
   position: absolute;
-  left: (50px+15px);
-  top: 50px;
+  left: (50px+15px); //padding+align to input text
+  // top: 50px;
 }
 
 input[type='text'] {
@@ -312,7 +311,7 @@ select, input[type='text'] {
 }
 
 input[type='submit'] {
-  // display: none;
+  display: none;
 }
 
 .pointer {
@@ -324,6 +323,17 @@ input[type='submit'] {
   height: 50px;
   border: 2px solid #dcdce1;
   padding-left: 15px;
+}
+
+#day:focus,
+#month:focus,
+#year:focus{
+  border-color: $violet;
+}
+
+#month {
+  padding-top: 0px;
+  padding-bottom: 0px;
 }
 
 #day, #month {
@@ -339,11 +349,7 @@ input[type='submit'] {
   width: 50px;
 }
 
-@media screen and (-ms-high-contrast: active), screen and (-ms-high-contrast: none) {
-  #month{
-    padding-top: 14px;
-  }
-}
+
 
 input[type="number"]::-webkit-outer-spin-button,
 input[type="number"]::-webkit-inner-spin-button {
@@ -438,3 +444,5 @@ input[type="number"] {
   border-top: 2px solid $green;
   color: #FFFFFF;
 }
+
+@import "handheld";

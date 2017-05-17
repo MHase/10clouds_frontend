@@ -113,7 +113,10 @@
             <!-- <input type="number" name="" min="1" max="31" value="" id='day' required> -->
           </div>
           <div class="inline">
-          <input type="text" name="" value="January" id='month' pattern="[a-zA-Z]+"required>
+          <!-- <input type="text" name="" value="January" id='month' pattern="[a-zA-Z]+"required> -->
+          <select class="month" name="" id="month" required>
+            <option value="" disabled selected></option>
+          </select>
           <!-- <input type="text" name="" value="" id='month' pattern="[a-zA-Z]+"required> -->
         </div>
           <input type="number" name="" min='1940' max='2017' value="1990" id='year' required>
@@ -124,6 +127,8 @@
       </form>
 
     </div>
+    <div class="button_holder">
+
     <div class="button pointer" id="submit_div">
       CONTINUE
       <div class="arrow inline">
@@ -134,6 +139,7 @@
         </svg>
       </div>
     </div>
+  </div>
   <div class="tabs">
     <div class="tab pointer" data-value='1'>01</div>
     <div class="tab pointer" data-value='2'>02</br>Personal</div>

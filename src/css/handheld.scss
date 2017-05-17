@@ -1,20 +1,65 @@
+$right_width: 470px;
 @media all and (min-width: 450px) and (max-width: 600px) {
   .content {
-    width: 470px;
+    width: $right_width;
   }
   .left {
-    visibility: hidden;
+    display: none;
   }
 }
 
 
-@media all and (max-width: 450px) {
+@media only screen and (max-device-width: 450px) {
   .content {
-    // visibility: hidden;
-    width: 470px;
+    width: auto;
   }
   .left {
-    visibility: hidden;
+    display: none;
+  }
+  .right {
+    padding: 20px 15px 20px 15px;
+    float: left;
+    width: 290px;
+  }
+
+  .modal {
+    width: 200px;
+    height: 200px;
+  }
+
+
+  .name {
+    width: 260px;
+  }
+
+  .mobile {
+    width: 130px;
+  }
+
+
+  .title {
+    height: 80px;
+
+    #welcome {
+      width: auto;
+      // padding: 15px;
+      left: (15px +15px); //padding+align to input text
+    }
+  }
+
+  .button {
+    right: auto;
+    margin-left: 50%;
+    transform: translate(-50%);
+    display:block;
+  }
+
+  #month {
+    width: 50px;
+  }
+
+  #year {
+    width: 100px;
   }
 
   .modal {
