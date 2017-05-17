@@ -4,8 +4,10 @@
   "description": "10clouds recruitment task for frontend developer",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "webpack"
+    "build": "webpack -p",
+    "server": "http-server -o",
+    "dev": "webpack-dev-server --open",
+    "10clouds": "webpack && http-server -o"
   },
   "keywords": [],
   "author": "Maciej Sykula",

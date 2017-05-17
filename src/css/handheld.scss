@@ -1,4 +1,4 @@
-@media all and (min-width: 320px) and (max-width: 600px) {
+@media all and (min-width: 450px) and (max-width: 600px) {
   .content {
     width: 470px;
   }
@@ -8,12 +8,16 @@
 }
 
 
-@media all and (max-width: 320px) {
+@media all and (max-width: 450px) {
   .content {
-    visibility: hidden;
+    // visibility: hidden;
     width: 470px;
   }
   .left {
     visibility: hidden;
+  }
+
+  .modal {
+
   }
 }
