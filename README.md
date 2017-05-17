@@ -17,4 +17,4 @@ npm run 10clouds
 ```
 
 ### Preview avaiable at:
-[mhase.github.io](https://mhase.github.io/10clouds)
+[mhase.github.io](https://mhase.github.io/clouds)
