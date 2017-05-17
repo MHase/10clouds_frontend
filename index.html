@@ -1,151 +1,139 @@
 <!DOCTYPE html>
-
 <html>
+
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
-<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-<meta name="HandheldFriendly" content="true">
-  <title>Front-end recruitment task - 10clouds</title>
-  <!-- favicon -->
-  <link rel="icon" type="image/png" href="https://10clouds.com/wp-content/themes/thegem/dist/images/icons/favicon-32x32.png" sizes="32x32">
-<link rel="icon" type="image/png" href="https://10clouds.com/wp-content/themes/thegem/dist/images/icons/favicon-194x194.png" sizes="194x194">
-<link rel="icon" type="image/png" href="https://10clouds.com/wp-content/themes/thegem/dist/images/icons/favicon-96x96.png" sizes="96x96">
-<link rel="icon" type="image/png" href="https://10clouds.com/wp-content/themes/thegem/dist/images/icons/android-chrome-192x192.png" sizes="192x192">
-<link rel="icon" type="image/png" href="https://10clouds.com/wp-content/themes/thegem/dist/images/icons/favicon-16x16.png" sizes="16x16">
-
-  <link rel="stylesheet" href="dist/css/main.css">
-  <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.2.1.min.js"></script>
-  <script type = "text/javascript" src = "https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.3/jquery-ui.min.js"></script>
-  <script src="dist/js/main.js" charset="utf-8"></script>
+    <meta charset='utf-8'>
+    <meta name='viewport' content='width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
+    <title>Front-end recruitment task - 10clouds</title>
+    <!-- favicon -->
+    <link rel='icon' type='image/png' href='https://10clouds.com/wp-content/themes/thegem/dist/images/icons/favicon-32x32.png' sizes='32x32'>
+    <link rel='icon' type='image/png' href='https://10clouds.com/wp-content/themes/thegem/dist/images/icons/favicon-194x194.png' sizes='194x194'>
+    <link rel='icon' type='image/png' href='https://10clouds.com/wp-content/themes/thegem/dist/images/icons/favicon-96x96.png' sizes='96x96'>
+    <link rel='icon' type='image/png' href='https://10clouds.com/wp-content/themes/thegem/dist/images/icons/android-chrome-192x192.png' sizes='192x192'>
+    <link rel='icon' type='image/png' href='https://10clouds.com/wp-content/themes/thegem/dist/images/icons/favicon-16x16.png' sizes='16x16'>
+    <!-- css -->
+    <link rel='stylesheet' href='dist/css/main.css'>
+    <!-- js -->
+    <script src='https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.2.1.min.js'></script>
+    <script type='text/javascript' src='https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.3/jquery-ui.min.js'></script>
+    <script src='dist/js/main.js' charset='utf-8'></script>
 </head>
+
 <body>
-  <div class="body_inactive"></div>
-  <div class="modal center">
-    Thank you for completing the form</br>Everything is OK :)
-    <div class="button pointer">
-      DONE
+    <div class='body_inactive'></div>
+    <div class='modal center'>
+        <div id='modal_message'></div>
+        <div class='button pointer'>
+            DONE
+        </div>
     </div>
-  </div>
-  <div class="content center">
-    <div class="left">
-      <svg>
-        <line x1="20" y1="60" x2="98" y2="60" class="green line"/>
-        <line x1="20" y1="84" x2="188" y2="84" class="violet line"/>
-        <line x1="60" y1="108" x2="158" y2="108" class="white line"/>
-        <line x1="59" y1="132" x2="137" y2="132" class="green line"/>
-        <line x1="20" y1="156" x2="178" y2="156" class="white line"/>
-        <line x1="90" y1="180" x2="265" y2="180" class="green line"/>
-        <line x1="90" y1="204" x2="258" y2="204" class="violet line"/>
-        <line x1="60" y1="228" x2="148" y2="228" class="white line"/>
-        <line x1="90" y1="252" x2="218" y2="252" class="violet line"/>
-        <line x1="20" y1="276" x2="249" y2="276" class="white line"/>
-        <line x1="60" y1="300" x2="205" y2="300" class="green line"/>
-        <line x1="90" y1="324" x2="168" y2="324" class="violet line"/>
-        <line x1="90" y1="348" x2="208" y2="348" class="white line"/>
-        <line x1="60" y1="372" x2="235" y2="372" class="green line"/>
-        <line x1="90" y1="396" x2="108" y2="396" class="violet line"/>
-        <line x1="90" y1="420" x2="168" y2="420" class="white line"/>
-        <line x1="120" y1="444" x2="255" y2="444" class="green line"/>
-        <line x1="120" y1="468" x2="289" y2="468" class="violet line"/>
-      </svg>
+    <div class='content center'>
+        <div class='left'>
+            <svg>
+                <line x1='20' y1='60' x2='98' y2='60' class='green line' />
+                <line x1='20' y1='84' x2='188' y2='84' class='violet line' />
+                <line x1='60' y1='108' x2='158' y2='108' class='white line' />
+                <line x1='59' y1='132' x2='137' y2='132' class='green line' />
+                <line x1='20' y1='156' x2='178' y2='156' class='white line' />
+                <line x1='90' y1='180' x2='265' y2='180' class='green line' />
+                <line x1='90' y1='204' x2='258' y2='204' class='violet line' />
+                <line x1='60' y1='228' x2='148' y2='228' class='white line' />
+                <line x1='90' y1='252' x2='218' y2='252' class='violet line' />
+                <line x1='20' y1='276' x2='249' y2='276' class='white line' />
+                <line x1='60' y1='300' x2='205' y2='300' class='green line' />
+                <line x1='90' y1='324' x2='168' y2='324' class='violet line' />
+                <line x1='90' y1='348' x2='208' y2='348' class='white line' />
+                <line x1='60' y1='372' x2='235' y2='372' class='green line' />
+                <line x1='90' y1='396' x2='108' y2='396' class='violet line' />
+                <line x1='90' y1='420' x2='168' y2='420' class='white line' />
+                <line x1='120' y1='444' x2='255' y2='444' class='green line' />
+                <line x1='120' y1='468' x2='289' y2='468' class='violet line' />
+            </svg>
+        </div>
+        <div class='right'>
+            <div class='svg_line_top'>
+                <svg>
+                    <line x1='0' y1='0' x2='69' y2='0' />
+                </svg>
+            </div>
+            <div id='account'>
+                <span>Your account</span>
+            </div>
+            <div id='welcome'>
+                <span>Take it all with you. Switch between devices, and pick up.</span>
+            </div>
+            <form action='' method='post' id='form'>
+                <div class='group name'>
+                    <!-- <input type='text' name='name' value='Maciek' required> -->
+                    <input type='text' name='name' required>
+                    <span class='bar'></span>
+                    <label>Your name</label>
+                </div>
+                <div class='group'>
+                    <div class='directional inline'>
+                        <select name='dir'>
+                            <option value='48'>+48 (PL)</option>
+                            <option value='49'>+49 (DE)</option>
+                            <option value='31'>+31 (NL)</option>
+                        </select>
+                        <span class='bar'></span>
+                        <label>Mobile</label>
+                    </div>
+                    <div class='mobile inline'>
+                        <input type='text' name='mobile' value='' class='mobile'  minlength='9' maxlength='11' required>
+                        <!-- <input type='tel' name='mobile' value='508123539' class='mobile' minlength='9' maxlength='11' title='Only numbers: 999 999 999 or 999999999' required> -->
+                        <span class='bar'></span>
+                    </div>
+                </div>
+                <div class='group gender'>
+                    <div class='radio pointer' data-value='female' id='female'>
+                        <div class='check'>
+                            <div class='radio_active'></div>
+                        </div>
+                    </div>
+                    <div class='radio pointer' data-value='male' id='male'>
+                        <div class='check'>
+                            <div class='radio_active'></div>
+                        </div>
+                    </div>
+                    <label>Gender</label>
+                </div>
+                <div class='group birth'>
+                    <div class='inline'>
+                        <!-- <input type='number' name='' min='1' max='31' value='22' id='day' required> -->
+                        <input type='number' name='day' min='1' max='31' value='' id='day' required>
+                    </div>
+                    <div class='inline'>
+                        <select class='month' name='month' id='month' required>
+                            <option value='' disabled selected></option>
+                        </select>
+                    </div>
+                    <!-- <input type='number' name='' min='1940' max='2017' value='1990' id='year' required> -->
+                    <input type='number' name='year' min='1940' max='2017' value='' id='year' required>
+                    <label>Date of birth</label>
+                </div>
+                <input type='submit' name='submit' value='submit' id='submit_btn' />
+            </form>
+        </div>
+        <div class='button_holder'>
+            <div class='button pointer' id='submit_div'>
+                CONTINUE
+                <div class='arrow inline'>
+                    <svg width='50' height='50'>
+                        <line x1='17' y1='25' x2='34' y2='25' style='stroke:#ffffff;' />
+                        <line x1='34' y1='25' x2='30' y2='21' style='stroke:#ffffff;' />
+                        <line x1='34' y1='25' x2='30' y2='29' style='stroke:#ffffff;' />
+                    </svg>
+                </div>
+            </div>
+        </div>
+        <div class='tabs'>
+            <div class='tab pointer' data-value='1'>01</div>
+            <div class='tab pointer' data-value='2'>02</br>Personal</div>
+            <div class='tab pointer' data-value='3'>03</div>
+        </div>
     </div>
-    <div class="right">
-      <form class="" action="" method="post" id="form">
-      <div class="svg_line_top">
-        <svg>
-          <line x1="0" y1="0" x2="69" y2="0" />
-        </svg>
-
-      </div>
-
-      <div id="account">
-        <span id="">Your account</span>
-      </div>
-        <div class="title">
-          <div id="welcome">
-            <span id="">Take it all with you. Switch between devices, and pick up.</span>
-          </div>
-        </div>
-        <div class="group name">
-          <input type="text" name="name" value="Maciek" required>
-          <!-- <input type="text" name="name" value="" required> -->
-          <span class="bar"></span>
-          <label for="">Your name</label>
-        </div>
-        <div class="group">
-            <div class="directional inline">
-              <select class="" name="" class="">
-                <option value="48">+48 (PL)</option>
-                <option value="49">+49 (DE)</option>
-                <option value="31">+31 (NL)</option>
-              </select>
-              <span class="bar"></span>
-              <label for="">Mobile</label>
-            </div>
-            <div class="mobile inline">
-              <!-- <input type="text" name="mobile" value="" class="mobile" pattern="(\d{9})?((\d{3}[ ]*){3})" minlength='9' maxlength="11" title='Only numbers: 999 999 999 or 999999999' required> -->
-              <input type="tel" name="mobile" value="508123539" class="mobile" pattern="(\d{9})?((\d{3}[ ]*){3})" minlength='9' maxlength="11" title='Only numbers: 999 999 999 or 999999999' required>
-              <span class="bar"></span>
-            </div>
-        </div>
-        <div class="group gender">
-          <div class="radio pointer" data-value='female' id='female'>
-            <div class="check">
-              <div class="radio_active">
-
-              </div>
-            </div>
-          </div>
-          <div class="radio pointer" data-value='man' id='male'>
-            <div class="check">
-              <div class="radio_active">
-
-              </div>
-            </div>
-          </div>
-          <label for="">Gender</label>
-        </div>
-        <div class="group birth">
-          <div class="inline">
-            <input type="number" name="" min="1" max="31" value="22" id='day' required>
-            <!-- <input type="number" name="" min="1" max="31" value="" id='day' required> -->
-          </div>
-          <div class="inline">
-          <!-- <input type="text" name="" value="January" id='month' pattern="[a-zA-Z]+"required> -->
-          <select class="month" name="" id="month" required>
-            <option value="" disabled selected></option>
-          </select>
-          <!-- <input type="text" name="" value="" id='month' pattern="[a-zA-Z]+"required> -->
-        </div>
-          <input type="number" name="" min='1940' max='2017' value="1990" id='year' required>
-          <!-- <input type="number" name="" min='1940' max='2017' value="" id='year' required> -->
-          <label>Date of birth</label>
-        </div>
-        <input type="submit" name="submit" value="submit" id='submit_btn'/>
-
-    </div>
-    <div class="button_holder">
-
-    <div class="button pointer" id="submit_div">
-      CONTINUE
-      <div class="arrow inline">
-        <svg width='50' height='50'>
-          <line x1="17"  y1="25" x2="34" y2="25" style="stroke:#ffffff;"/>
-          <line x1="34"  y1="25" x2="30" y2="21" style="stroke:#ffffff;"/>
-          <line x1="34"  y1="25" x2="30" y2="29" style="stroke:#ffffff;"/>
-        </svg>
-      </div>
-    </div>
-  </div>
-  <div class="tabs">
-    <div class="tab pointer" data-value='1'>01</div>
-    <div class="tab pointer" data-value='2'>02</br>Personal</div>
-    <div class="tab pointer" data-value='3'>03</div>
-  </div>
-</form>
-
-  </div>
-
 </body>
+
 </html>

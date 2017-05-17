@@ -1,8 +1,8 @@
 {
   "name": "10clouds_frontend",
   "version": "1.0.0",
-  "description": "10clouds recruitment task for frontend developer",
-  "main": "index.js",
+  "description": "",
+  "main": "main.js",
   "scripts": {
     "build": "webpack -p",
     "server": "http-server -o",

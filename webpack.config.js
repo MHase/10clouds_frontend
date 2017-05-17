@@ -38,6 +38,6 @@ module.exports = {
     plugins: [
       new ExtractTextPlugin("css/[name].css")
     ],
-    watch: true
+    watch: false
     // devtool: 'source-map'
 };

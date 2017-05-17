@@ -1,80 +1,62 @@
-// $right_width: 470px;
-// @media all and (min-width: 450px) and (max-width: 600px) {
-//   .content {
-//     width: $right_width;
-//   }
-//   .left {
-//     display: none;
-//   }
-// }
-
 $right_width: 290px;
 $padding15: 15px;
 
 @media only screen and (max-device-width: 450px) {
-  body {
 
-  height: 500px;
-  }
-
-  .content {
-    width: auto;
-  -webkit-overflow-scrolling: touch;
-  }
-  .left {
-    display: none;
-  }
-  .right {
-    padding: 20px $padding15 20px $padding15;
-    float: left;
-    width: 290px;
-    min-width: 0;
-  }
-
-  .modal {
-    width: 200px;
-    height: 200px;
-  }
-
-
-  .name {
-    width: 100%;
-  }
-
-  .mobile {
-    width: 130px;
-  }
-
-
-  .title {
-    height: 80px;
-    width:100%;
-
+    .content {
+        width: auto;
+        -webkit-overflow-scrolling: touch;
+    }
+    .left {
+        display: none;
+    }
+    .right {
+        padding: 35px $padding15;
+        float: left;
+        width: 290px;
+        min-width: 0;
+    }
+    .modal {
+        width: 200px;
+        height: 400px;
+    }
+    .name {
+        width: 100%;
+    }
+    .mobile {
+        width: 130px;
+    }
     #welcome {
-      width: auto;
-      left: 15px; //padding+align to input text
+        width: 100%;
+        width: auto;
+        left: 15px;
+        line-height: 150%;
+        padding-bottom: 30px;
     }
     #account {
-      line-height: 100%;
+      font-size: 36px;
+        line-height: 100%;
+        position: absolute;
+        top: -30px;
+        margin-bottom: 30px;
     }
-  }
-
-  .button {
-    right: auto;
-    margin-left: 50%;
-    transform: translate(-50%);
-    display:block;
-  }
-
-  #month {
-    width: 50px;
-  }
-
-  #year {
-    width: 100px;
-  }
-
-  .modal {
-
-  }
+    .button_holder {
+        width: 290px;
+        height: 50px;
+        position: absolute;
+        bottom: 0;
+        margin-left: 50%;
+        transform: translate(-50%);
+        .button {
+            position: relative;
+            left: 25px; //half of arrow div
+            bottom: -25px;
+        }
+    }
+    #month {
+        width: 50px;
+    }
+    #year {
+        width: 100px;
+    }
 }
